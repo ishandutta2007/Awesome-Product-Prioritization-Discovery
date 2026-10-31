@@ -1,217 +1,118 @@
-# Awesome-Product-Prioritization-Discovery
+# Awesome Product Prioritization & Discovery [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-## Top Product Prioritization & Discovery Ecosystem
+> A curated list of top SaaS products, open-source feedback boards, feature voting portals, and roadmap planning tools for modern product teams.
 
+[![Tracked Topics](https://img.shields.io/badge/topics-Product%20Management%20%7C%20Discovery%20%7C%20Roadmaps-blue.svg)](#sector-overview--market-dynamics)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](#how-to-contribute)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](LICENSE)
 
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Feedback Boards, Roadmap Planning & Self-Hosted Discovery Platforms*  
-
+*Focused on Feedback Portals, Feature Prioritization Frameworks, Product Roadmaps & Self-Hosted Discovery Engines.*  
 **Last updated: November 2026**
 
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Product Prioritization & Discovery**. These tools enable product teams to capture ideas, collect and vote on customer feedback, prioritize features against strategic criteria, and communicate roadmaps—turning scattered input into a coherent, defensible product direction.
-
-
-
-**Examples** include Jira Product Discovery, Productboard, Aha!, Craft.io, Airfocus, ProdPad, Dragonboat, UserVoice, Canny, and Roadmunk (the category leaders).
-
-
-
-**Open-source emphasis**: Product Prioritization & Discovery is a domain where open-source tooling has **genuinely matured but remains fragmented across the discovery workflow**. The strongest active projects are **Quackback** (a self-hosted Canny/UserVoice/Productboard alternative with feedback boards, AI duplicate detection, roadmap, changelog, and an MCP server—actively maintained) , **Fider** (a focused feedback and feature-voting portal with active maintenance and a simple self-hosted deployment) , and **Eververse** (an open-source Productboard/Cycle alternative for exploring problems, ideating, and planning roadmaps with AI, though it is a Next.js monorepo requiring Supabase and Vercel deployment) . For broader product management, **Plane** provides cycles, modules, and roadmap views but is a project management platform rather than a dedicated discovery tool . The critical caveat: **no open-source project matches Productboard's integrated feedback-to-roadmap-to-Jira synchronization**—you either assemble a feedback board (Fider, Quackback) with a separate PM tool (Plane), or accept that the full discovery loop requires stitching multiple tools together .
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-products)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Jira Product Discovery](https://www.atlassian.com/software/jira/product-discovery)**  
-
-  Atlassian's dedicated product discovery tool for capturing ideas, collecting feedback, prioritizing with custom formulas, and creating roadmaps; integrates directly with Jira Software for linking discovery items to delivery workflows.
-
-
-
-- **[Productboard](https://www.productboard.com/)**  
-
-  The benchmark for product management platforms; centralizes customer feedback, prioritizes features against strategic objectives, and communicates roadmaps across teams.
-
-
-
-- **[Aha!](https://www.aha.io/)**  
-
-  Comprehensive product management suite covering strategy, ideation, prioritization, roadmaps, and release planning; positioned for enterprise product teams.
-
-
-
-- **[Craft.io](https://craft.io/)**  
-
-  Product management platform focused on prioritization and roadmapping with customizable scoring frameworks and stakeholder alignment.
-
-
-
-- **[Airfocus](https://airfocus.com/)**  
-
-  Modular product management platform with prioritization scorecards, roadmaps, and feedback portals; known for flexible, customizable workflows.
-
-
-
-- **[ProdPad](https://www.prodpad.com/)**  
-
-  Product management platform for idea capture, prioritization, and roadmap communication; includes customer feedback portals and OKR tracking.
-
-
-
-- **[Dragonboat](https://dragonboat.io/)**  
-
-  Product portfolio management platform focused on strategic alignment, capacity planning, and outcome-driven roadmapping.
-
-
-
-- **[UserVoice](https://uservoice.com/)**  
-
-  Customer feedback and idea management platform with voting, prioritization, and roadmap communication; widely adopted for B2B SaaS feedback loops.
-
-
-
-- **[Canny](https://canny.io/)**  
-
-  Feature request tracking and roadmap platform with voting, comments, and changelog; the standard for customer-facing feedback boards.
-
-
-
-- **[Roadmunk](https://roadmunk.com/)**  
-
-  Roadmap planning and communication platform with multiple timeline views and stakeholder collaboration features.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### Feedback & Voting Platforms (Canny/UserVoice Alternatives)
-
-
-
-- **[Quackback](https://github.com/QuackbackIO/quackback)**  
-
-  The most comprehensive open-source **Canny/UserVoice/Productboard alternative** available (self-hosted or cloud) . Features: **feedback boards** with voting, comments, and status tracking; **Quinn AI** for duplicate detection, theme summarization, and an MCP server that lets AI agents search, triage, and act on feedback directly; **admin inbox** for triage; **roadmap and changelog** with scheduled publishing; **25 integrations** including Slack, Linear, Jira, GitHub, Intercom, Zendesk, and two-way issue tracker sync; **embeddable widget** with native iOS/Android SDKs; **REST API, webhooks, and MCP** . Docker deployment with PostgreSQL; migrations run automatically on startup . **Best for teams wanting a complete, self-hosted feedback-to-roadmap platform**—but it is a newer project and the cloud code in the repo (default-off) may raise questions about long-term licensing direction .
-
-
-
-- **[Fider](https://github.com/getfider/fider)**  
-
-  The most established open-source **feedback portal and feature voting platform** (AGPL-3.0, actively maintained, ~4.5k GitHub stars) . Features: **centralized portal** where users submit ideas and vote; comments and discussions on each post; **status updates** for communicating progress; user authentication; simple, lightweight interface . Deployable via Docker Compose with MailHog for email verification . **Best for teams wanting a focused, proven feedback board** without the complexity of a full product management suite—but it is feedback-only, lacking roadmap views, prioritization scorecards, or integrations with delivery tools .
-
-
-
-- **[LogChimp](https://github.com/logchimp/logchimp)**  
-
-  Open-source **Canny/ProductBoard/UserJot alternative** (TypeScript/Vue, AGPL-3.0, ~1.1k GitHub stars) . Features: **brand-customizable** feedback portals; create posts; **organize posts by Boards and Roadmaps**; powerful dashboard; secure by design; self-hosted . Latest release v0.9.0 (April 2026) with 13 total releases . **Best for teams wanting a lightweight feedback board with basic roadmap organization**—but it is less feature-dense than Quackback and the roadmap functionality is simpler than dedicated PM tools .
-
-
-
-- **[Tuti](https://github.com/omnivision-solutions/tuti)**  
-
-  Open-source **feature voting and product feedback platform** (Next.js, PostgreSQL, AGPL-3.0, v0.x) . Features: **per-project public portals on subdomains** (boards, posts, votes, comments, JWT SSO sign-in through your app); **dashboard for the team** (statuses, **AI-assisted duplicate merging**, boards, team roles); **MCP server** for AI agent access . **Critical caveat**: it is **early-stage** (v0.x, September 2026) with GitHub integration planned but not yet shipped . **Best for teams wanting a modern, self-hosted feedback portal with AI duplicate detection**—but verify production readiness before relying on it .
-
-
-
-### Innovation & Idea Management
-
-
-
-- **[Ignite](https://github.com/sarathfrancis90/ignite)**  
-
-  Open-source **innovation management platform** (Next.js, PostgreSQL, AGPLv3) positioned as an alternative to HYPE Enterprise . Features: **campaign management** for innovation campaigns; **idea engine** (submit, discuss, vote, evaluate with community graduation); **evaluation engine** (scorecards, pairwise evaluation, weighted scoring, bubble charts); **partner engagement** (organization database, scouting boards); **strategy building** (trends, technologies, portfolios); **project management** with phase-gate processes; **AI-powered** semantic similarity and idea enrichment . **Best for organizations running structured innovation programs**—but it is heavier than a simple feedback board and oriented toward enterprise innovation workflows rather than product feature prioritization .
-
-
-
-- **[Mindwendel](https://github.com/b310-digital/mindwendel)**  
-
-  Open-source **collaborative brainstorming and idea management platform** (Elixir/Phoenix, AGPL-3.0) . Features: **5-minute setup**; anonymous invitation (no registration required); **create and upvote ideas with live updates**; cluster/filter with custom labels; comments; drag-and-drop ordering; **AI-powered idea generation** via OpenAI-compatible APIs; HTML/CSV export; **automatic deletion after 30 days** for GDPR compliance . **Best for live brainstorming sessions and workshops**—but it is session-focused rather than a persistent feedback board or roadmap tool .
-
-
-
-### Roadmap Planning (Standalone)
-
-
-
-- **[Product Roadmap Planner](https://github.com/ugur10/product-roadmap-planner)**  
-
-  Open-source **product roadmap planning tool** (SvelteKit 5, no backend—local storage) . Features: **CRUD for features** with priority scoring (**Impact × Effort matrix**); status tracking; category organization; **interactive Priority Matrix** (2D visualization); **quarterly timeline** with drag-and-drop positioning; **progress dashboard** with PM intelligence (risk alerts, team capacity, momentum tracking, executive summary); JSON export/import; **dark mode and WCAG-compliant** . **Best for individual PMs or small teams wanting a lightweight, browser-only roadmap planner**—but it has **no backend, no collaboration, and no persistence beyond local storage** .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Eververse** — Open-source **Productboard/Cycle alternative** for exploring problems, ideating, prioritizing, and planning roadmaps with AI (Next.js monorepo, AGPL-3.0) . **Caveat**: requires Supabase, Stripe, and Vercel deployment—not a simple self-hosted tool . **Best for teams already in the Vercel/Supabase ecosystem** wanting a Productboard-style discovery platform.
-
-- **Plane** — Open-source **project management platform** (AGPL-3.0) with **cycles, modules, views, and roadmap management** . **Not a discovery tool**—it is a delivery-focused PM platform, but relevant for teams wanting to link prioritized features to execution .
-
-
-
-**Frameworks for building custom systems**: For a **complete feedback-to-roadmap platform**, Quackback provides the most comprehensive open-source option . For a **focused, proven feedback board**, Fider . For **AI-assisted duplicate detection and triage**, Tuti (early-stage) or Quackback's Quinn AI . For **innovation program management**, Ignite . For **lightweight roadmap planning**, Product Roadmap Planner (local-only) or Plane (full PM). **No open-source project matches Productboard's integrated discovery-to-delivery synchronization**—you either assemble feedback (Fider/Quackback) with a PM tool (Plane), or accept that the full loop requires stitching multiple tools together .
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Product prioritization platforms handling customer feedback and roadmap data must comply with applicable privacy regulations (GDPR, CCPA) and data governance policies; **self-hosted solutions place full responsibility for security, backups, and uptime on the operator**.
-
-- **Open-source product discovery is fragmented but genuinely viable when assembled**—Quackback provides a comprehensive feedback-to-roadmap platform , Fider provides a proven feedback board , and Plane provides delivery PM . However, **no open-source project matches Productboard's integrated feedback-to-roadmap-to-Jira synchronization**—organizations requiring the full discovery-to-delivery loop should evaluate commercial platforms or plan for integration work.
-
-- Verify license terms for commercial use; Quackback is open-source (check repository) , Fider uses AGPL-3.0 , and LogChimp uses AGPL-3.0 .
-
-
+This repository tracks notable **SaaS platforms** and **open-source tools** dedicated to **Product Prioritization & Product Discovery**. These solutions empower product managers, product operations teams, and founders to systematically capture customer feedback, run ideation and feature voting boards, score backlogs against strategic criteria (RICE, Kano, Value vs. Effort), and communicate dynamic roadmaps.
 
 ---
 
+## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS / Commercial Platforms](#saas--commercial-platforms)
+- [Open-Source GitHub Projects](#open-source-github-projects)
+  - [Feedback & Feature Voting Portals](#feedback--feature-voting-portals)
+  - [Product Management & Discovery Suites](#product-management--discovery-suites)
+  - [Ideation & Innovation Engines](#ideation--innovation-engines)
+  - [Roadmap Planners & Local Scoring Tools](#roadmap-planners--local-scoring-tools)
+- [How to Contribute](#how-to-contribute)
+- [Disclaimer](#disclaimer)
 
-**Made for product managers, product operations teams, and organizations building discovery and prioritization infrastructure.**  
+---
 
-Let's make product prioritization and discovery more open, but with clear eyes about the integrated discovery-to-delivery gap that commercial platforms still fill.
+## Sector Overview & Market Dynamics
+
+The global product management and product discovery software market is estimated at **$2.9 billion to $3.5 billion in 2026**, on pace to expand past **$8.0 billion to $15.0+ billion by 2033** at an annual growth rate (CAGR) exceeding 12%. 
+
+The sector displays a **moderately fragmented market structure**: large suite incumbents (like Atlassian's Jira ecosystem) dominate issue delivery, while specialized discovery, feature voting, and strategic roadmapping categories remain competitive among agile best-of-breed players (Productboard, Aha!, Airfocus, Canny) rather than resolving into a single winner-take-all monopoly.
+
+---
+
+## SaaS / Commercial Platforms
+
+*The table below compares leading commercial product prioritization and discovery platforms, ranked by company scale (market capitalization, valuation, or estimated ARR in descending order).*
+
+| Platform | Starting Tier Price | Free Tier Limit / Free Trial | Company Scale (Valuation / Revenue) | Key Focus & Strengths |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Jira Product Discovery](https://www.atlassian.com/software/jira/product-discovery)** | $10.00 / creator / month (Standard) | **Free Forever**: Up to 3 creators, unlimited contributors, 2 GB storage, 200 automation runs/mo | **~$50B+ Market Cap** (Atlassian TTM revenue ~$6.5B) | Atlassian's native discovery tool for capturing ideas, matrix scoring, and direct Jira delivery linkage. |
+| **[Airfocus](https://airfocus.com/)** | Custom quote / Sales-led (Professional tier) | **14-day assisted trial** with demo sandbox access; no permanent free tier | **~$3.0B Parent Valuation** (Acquired by Lucid Software; $15M prior funding) | Modular product management platform with prioritization scorecards, feedback portals, and roadmaps. |
+| **[Productboard](https://www.productboard.com/)** | $19.00 / maker / month (Plus, billed annually) | **Free Forever**: 1 maker seat, 25 contributors, 500 feedback notes, 1 portal; 14-day Pro trial | **$1.7B Valuation** (Series D, ~$72M ARR) | Gold-standard product discovery platform centralizing customer insights, strategic alignment, and roadmaps. |
+| **[Aha!](https://www.aha.io/)** | $39.00 / user / month (Aha! Discovery / Ideas) | **30-day full-feature free trial**; no permanent free tier | **$100M+ ARR** (Bootstrapped unicorn, highly profitable) | Comprehensive enterprise product management suite for strategy, ideation, scorecards, and roadmaps. |
+| **[Roadmunk](https://roadmunk.com/)** | $19.00 / user / month (Starter, min 2 users, billed annually) | **14-day free trial** with full roadmap capabilities (no credit card required); no free tier | **~$12.5M+ ARR** (Acquired by Tempo Software / Diversis Capital) | Visual roadmap planning platform with swimlane/timeline views and multi-stakeholder collaboration. |
+| **[UserVoice](https://uservoice.com/)** | $699.00 / month (Pro tier, billed annually) | **14-day sales-assisted trial**; no permanent self-serve free tier | **~$4.5M - $6.5M ARR** (Private equity-backed, $9.3M funding) | Enterprise customer feedback and idea management platform with customer voting and roadmap publishing. |
+| **[Canny](https://canny.io/)** | $79.00 / month (Pro tier, billed annually) | **Free Forever**: Up to 25 tracked users, 3 boards, feedback widgets; 14-day Pro trial | **~$3.5M ARR** (Bootstrapped & capital-efficient) | Feature request tracking, user voting boards, changelog publishing, and public roadmaps. |
+| **[Dragonboat](https://dragonboat.io/)** | $39.00 / editor / month (Essential, billed annually) | **14-day sales-directed trial** / interactive sandbox; no permanent free tier | **~$3.4M ARR** ($17.3M total venture funding) | Outcome-driven product portfolio management, capacity planning, and strategic roadmap alignment. |
+| **[Craft.io](https://craft.io/)** | $19.00 / editor / month (Starter, billed annually) | **14-day free trial** on Pro plan (no credit card required); no permanent free tier | **~$2M - $3M ARR** ($8M Series A funding) | Prioritization framework platform supporting RICE, MoSCoW, WSJF scoring, and capacity roadmaps. |
+| **[ProdPad](https://www.prodpad.com/)** | $36.00 / editor / month (per module, billed annually) | **7-day base free trial** (extendable up to 30 days via onboarding tasks); no free tier | **~$1.3M - $4.4M ARR** (Privately held / bootstrapped) | Outcome-oriented idea management, customer feedback portals, lean roadmap planning, and OKR tracking. |
+
+---
+
+## Open-Source GitHub Projects
+
+*Open-source discovery and product management tools, sorted by popularity (GitHub star count in descending order).*
+
+| Repository | GitHub Stars | Primary Role | Tech Stack | License |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Plane](https://github.com/makeplane/plane)** | [![Plane Stars](https://img.shields.io/github/stars/makeplane/plane?style=social&color=white)](https://github.com/makeplane/plane/stargazers) | Open-Source Project & Product Management Platform (Cycles, Modules, Roadmaps) | Python / Django, TypeScript, Next.js | AGPL-3.0 |
+| **[Formbricks](https://github.com/formbricks/formbricks)** | [![Formbricks Stars](https://img.shields.io/github/stars/formbricks/formbricks?style=social&color=white)](https://github.com/formbricks/formbricks/stargazers) | Open-Source In-App Feedback & User Discovery Survey Platform | Next.js, TypeScript, PostgreSQL | AGPL-3.0 |
+| **[Leantime](https://github.com/Leantime/leantime)** | [![Leantime Stars](https://img.shields.io/github/stars/Leantime/leantime?style=social&color=white)](https://github.com/Leantime/leantime/stargazers) | Open-Source Strategic Project & Idea Management for Non-Project Managers | PHP, JavaScript, MySQL | AGPL-3.0 |
+| **[Fider](https://github.com/getfider/fider)** | [![Fider Stars](https://img.shields.io/github/stars/getfider/fider?style=social&color=white)](https://github.com/getfider/fider/stargazers) | Open-Source Feature Voting & Community Customer Feedback Portal | Go, React, PostgreSQL | AGPL-3.0 |
+| **[LogChimp](https://github.com/logchimp/logchimp)** | [![LogChimp Stars](https://img.shields.io/github/stars/logchimp/logchimp?style=social&color=white)](https://github.com/logchimp/logchimp/stargazers) | Open-Source Product Feedback Tracking & Roadmap Platform (Canny Alternative) | Vue.js, Node.js, PostgreSQL | AGPL-3.0 |
+| **[ClearFlask](https://github.com/clearflask/clearflask)** | [![ClearFlask Stars](https://img.shields.io/github/stars/clearflask/clearflask?style=social&color=white)](https://github.com/clearflask/clearflask/stargazers) | Open-Source Client Feedback Board, Feature Voting & Public Roadmap Platform | Java, TypeScript, React | AGPL-3.0 |
+| **[Eververse](https://github.com/haydenbleasel/eververse)** | [![Eververse Stars](https://img.shields.io/github/stars/haydenbleasel/eververse?style=social&color=white)](https://github.com/haydenbleasel/eververse/stargazers) | Open-Source Productboard Alternative: Problem Discovery, Ideation & Roadmaps | Next.js, Supabase, Tailwind CSS | AGPL-3.0 |
+| **[Quackback](https://github.com/QuackbackIO/quackback)** | [![Quackback Stars](https://img.shields.io/github/stars/QuackbackIO/quackback?style=social&color=white)](https://github.com/QuackbackIO/quackback/stargazers) | All-in-One Open-Source Feedback Board, AI Triage (MCP), Roadmap & Changelog | TypeScript, Docker, PostgreSQL | AGPL-3.0 |
+| **[Mindwendel](https://github.com/b310-digital/mindwendel)** | [![Mindwendel Stars](https://img.shields.io/github/stars/b310-digital/mindwendel?style=social&color=white)](https://github.com/b310-digital/mindwendel/stargazers) | Collaborative Brainstorming, Live Upvoting & Idea Management Platform | Elixir, Phoenix, Tailwind CSS | AGPL-3.0 |
+| **[Tuti](https://github.com/omnivision-solutions/tuti)** | [![Tuti Stars](https://img.shields.io/github/stars/omnivision-solutions/tuti?style=social&color=white)](https://github.com/omnivision-solutions/tuti/stargazers) | Modern Feature Voting & Feedback Board with AI-Assisted Duplicate Merging | Next.js, PostgreSQL | AGPL-3.0 |
+| **[Reflet](https://github.com/damien-schneider/reflet)** | [![Reflet Stars](https://img.shields.io/github/stars/damien-schneider/reflet?style=social&color=white)](https://github.com/damien-schneider/reflet/stargazers) | Transparent Open-Source Product Feedback Portal and Roadmap Software | TypeScript, Node.js | AGPL-3.0 |
+| **[Feedbackland](https://github.com/feedbackland/feedbackland)** | [![Feedbackland Stars](https://img.shields.io/github/stars/feedbackland/feedbackland?style=social&color=white)](https://github.com/feedbackland/feedbackland/stargazers) | Open-Source Canny Alternative with AI-Ranked Roadmaps & Feature Insights | TypeScript, Next.js | MIT |
+| **[Product Roadmap Planner](https://github.com/ugur10/product-roadmap-planner)** | [![Product Roadmap Planner Stars](https://img.shields.io/github/stars/ugur10/product-roadmap-planner?style=social&color=white)](https://github.com/ugur10/product-roadmap-planner/stargazers) | Browser-Based Impact vs. Effort Prioritization Matrix & Roadmap Planner | SvelteKit 5, LocalStorage | MIT |
+| **[Ignite](https://github.com/sarathfrancis90/ignite)** | [![Ignite Stars](https://img.shields.io/github/stars/sarathfrancis90/ignite?style=social&color=white)](https://github.com/sarathfrancis90/ignite/stargazers) | Open-Source Enterprise Innovation & Campaign Idea Evaluation Management | Next.js, PostgreSQL | AGPL-3.0 |
+
+---
+
+### Detailed Open-Source Category Breakdown
+
+#### Feedback & Feature Voting Portals
+- **[Fider](https://github.com/getfider/fider)** — Established, lightweight community portal for capturing user ideas and upvotes. Docker deployable with minimal infrastructure requirements.
+- **[LogChimp](https://github.com/logchimp/logchimp)** — Modular feedback board with roadmap categorization, custom domain branding, and clean REST APIs.
+- **[ClearFlask](https://github.com/clearflask/clearflask)** — Scalable client feedback and public roadmap platform with user segmentation and customizable voting mechanics.
+- **[Quackback](https://github.com/QuackbackIO/quackback)** — Advanced Canny alternative featuring AI-powered duplicate merging, public roadmap/changelog sync, 25+ integrations, and an MCP server for AI coding agents.
+- **[Tuti](https://github.com/omnivision-solutions/tuti)** — Multi-tenant public feedback portals with JWT single sign-on (SSO) and automated AI duplicate resolution.
+- **[Feedbackland](https://github.com/feedbackland/feedbackland)** — Open-source feedback hub focusing on AI-ranked product roadmaps and feature reach calculations without tracked user caps.
+- **[Reflet](https://github.com/damien-schneider/reflet)** — Clean, transparent feedback platform designed for startups and open-source communities.
+
+#### Product Management & Discovery Suites
+- **[Plane](https://github.com/makeplane/plane)** — Modern delivery and product planning system featuring cycles, project modules, analytics, and timeline roadmap views.
+- **[Eververse](https://github.com/haydenbleasel/eververse)** — Productboard alternative designed for problem discovery, feature ideation, AI-assisted spec creation, and strategy roadmaps.
+- **[Leantime](https://github.com/Leantime/leantime)** — Strategic work and idea management system integrating lean canvas ideation with milestone roadmaps.
+- **[Formbricks](https://github.com/formbricks/formbricks)** — Privacy-first user experience and feedback survey engine to discover customer friction points directly within web apps.
+
+#### Ideation & Innovation Engines
+- **[Mindwendel](https://github.com/b310-digital/mindwendel)** — Real-time collaborative brainstorming platform supporting instant idea voting, grouping, and OpenAI-compatible idea generation.
+- **[Ignite](https://github.com/sarathfrancis90/ignite)** — Enterprise-grade innovation management system featuring weighted scoring scorecards, pairwise idea evaluation, and phase-gate progression.
+
+#### Roadmap Planners & Local Scoring Tools
+- **[Product Roadmap Planner](https://github.com/ugur10/product-roadmap-planner)** — Lightweight, zero-backend interactive 2D Priority Matrix (Impact × Effort) with quarterly drag-and-drop roadmap timelines.
+
+---
+
+## How to Contribute
+
+1. Fork this repository.
+2. Add or update tools in the table and category breakdowns (keep data objective, verify starting pricing/limits, and check star counts).
+3. Submit a Pull Request with a concise summary of updates.
+
+---
+
+## Disclaimer
+
+- This repository is a community-curated directory for informational purposes and does not represent a commercial endorsement.
+- Verify software licenses and data privacy regulations (GDPR, SOC2, CCPA) prior to deployment. Self-hosted deployments require team management of security, uptime, and data retention.
+- All product names, logos, and brands are property of their respective owners.

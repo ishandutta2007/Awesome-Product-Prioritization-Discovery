@@ -1,33 +1,49 @@
-# Awesome Product Prioritization & Discovery [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<div align="center">
 
-> A curated list of top SaaS products, open-source feedback boards, feature voting portals, and roadmap planning tools for modern product teams.
+<a href="https://github.com/ishandutta2007/Awesome-Product-Prioritization-Discovery">
+  <img src="assets/banner.svg" alt="Awesome Product Prioritization & Discovery Banner" width="100%" />
+</a>
 
-[![Tracked Topics](https://img.shields.io/badge/topics-Product%20Management%20%7C%20Discovery%20%7C%20Roadmaps-blue.svg)](#sector-overview--market-dynamics)
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](#how-to-contribute)
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](LICENSE)
+# 🚀 Awesome Product Prioritization & Discovery
 
-*Focused on Feedback Portals, Feature Prioritization Frameworks, Product Roadmaps & Self-Hosted Discovery Engines.*  
-**Last updated: November 2026**
+> 🧭 A comprehensive, battle-tested directory of top SaaS tools, open-source feedback boards, feature voting portals, and roadmap planning suites.
 
-This repository tracks notable **SaaS platforms** and **open-source tools** dedicated to **Product Prioritization & Product Discovery**. These solutions empower product managers, product operations teams, and founders to systematically capture customer feedback, run ideation and feature voting boards, score backlogs against strategic criteria (RICE, Kano, Value vs. Effort), and communicate dynamic roadmaps.
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Mentioned in Awesome" /></a>
+  <a href="#-sector-overview--market-dynamics"><img src="https://img.shields.io/badge/topics-Product%20Management%20%7C%20Discovery%20%7C%20Roadmaps-blue.svg" alt="Tracked Topics" /></a>
+  <a href="#-how-to-contribute"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg" alt="Contributions Welcome" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg" alt="License: CC0-1.0" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+</div>
+
+🎯 *Focused on Feedback Portals, Feature Prioritization Frameworks (RICE, Kano, Value vs. Effort), Product Roadmaps & Self-Hosted Discovery Engines.*  
+📅 **Last updated: November 2026**
+
+This repository tracks notable **SaaS platforms** and **open-source tools** dedicated to **Product Prioritization & Product Discovery**. These solutions empower product managers, product operations teams, and founders to systematically capture customer feedback, run ideation and feature voting boards, score backlogs against strategic criteria, and communicate dynamic roadmaps.
 
 ---
 
-## Table of Contents
+## 📑 Table of Contents
 
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS / Commercial Platforms](#saas--commercial-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-  - [Feedback & Feature Voting Portals](#feedback--feature-voting-portals)
-  - [Product Management & Discovery Suites](#product-management--discovery-suites)
-  - [Ideation & Innovation Engines](#ideation--innovation-engines)
-  - [Roadmap Planners & Local Scoring Tools](#roadmap-planners--local-scoring-tools)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [💼 SaaS / Commercial Platforms](#-saas--commercial-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+  - [🗳️ Feedback & Feature Voting Portals](#-feedback--feature-voting-portals)
+  - [🛠️ Product Management & Discovery Suites](#-product-management--discovery-suites)
+  - [💡 Ideation & Innovation Engines](#-ideation--innovation-engines)
+  - [🗺️ Roadmap Planners & Local Scoring Tools](#-roadmap-planners--local-scoring-tools)
+- [🌟 Star History](#-star-history)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚖️ Disclaimer](#-disclaimer)
 
 ---
 
-## Sector Overview & Market Dynamics
+## 📊 Sector Overview & Market Dynamics
 
 The global product management and product discovery software market is estimated at **$2.9 billion to $3.5 billion in 2026**, on pace to expand past **$8.0 billion to $15.0+ billion by 2033** at an annual growth rate (CAGR) exceeding 12%. 
 
@@ -35,11 +51,11 @@ The sector displays a **moderately fragmented market structure**: large suite in
 
 ---
 
-## SaaS / Commercial Platforms
+## 💼 SaaS / Commercial Platforms
 
 *The table below compares leading commercial product prioritization and discovery platforms, ranked by company scale (market capitalization, valuation, or estimated ARR in descending order).*
 
-| Platform | Starting Tier Price | Free Tier Limit / Free Trial | Company Scale (Valuation / Revenue) | Key Focus & Strengths |
+| 🏢 Platform | 💳 Starting Tier Price | 🎁 Free Tier Limit / Free Trial | 📈 Company Scale (Valuation / Revenue) | 🎯 Key Focus & Strengths |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Jira Product Discovery](https://www.atlassian.com/software/jira/product-discovery)** | $10.00 / creator / month (Standard) | **Free Forever**: Up to 3 creators, unlimited contributors, 2 GB storage, 200 automation runs/mo | **~$50B+ Market Cap** (Atlassian TTM revenue ~$6.5B) | Atlassian's native discovery tool for capturing ideas, matrix scoring, and direct Jira delivery linkage. |
 | **[Airfocus](https://airfocus.com/)** | Custom quote / Sales-led (Professional tier) | **14-day assisted trial** with demo sandbox access; no permanent free tier | **~$3.0B Parent Valuation** (Acquired by Lucid Software; $15M prior funding) | Modular product management platform with prioritization scorecards, feedback portals, and roadmaps. |
@@ -54,11 +70,11 @@ The sector displays a **moderately fragmented market structure**: large suite in
 
 ---
 
-## Open-Source GitHub Projects
+## 🔓 Open-Source GitHub Projects
 
 *Open-source discovery and product management tools, sorted by popularity (GitHub star count in descending order).*
 
-| Repository | GitHub Stars | Primary Role | Tech Stack | License |
+| 📦 Repository | ⭐ GitHub Stars | 🏷️ Primary Role | 💻 Tech Stack | 📜 License |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Plane](https://github.com/makeplane/plane)** | [![Plane Stars](https://img.shields.io/github/stars/makeplane/plane?style=social&color=white)](https://github.com/makeplane/plane/stargazers) | Open-Source Project & Product Management Platform (Cycles, Modules, Roadmaps) | Python / Django, TypeScript, Next.js | AGPL-3.0 |
 | **[Formbricks](https://github.com/formbricks/formbricks)** | [![Formbricks Stars](https://img.shields.io/github/stars/formbricks/formbricks?style=social&color=white)](https://github.com/formbricks/formbricks/stargazers) | Open-Source In-App Feedback & User Discovery Survey Platform | Next.js, TypeScript, PostgreSQL | AGPL-3.0 |
@@ -77,9 +93,9 @@ The sector displays a **moderately fragmented market structure**: large suite in
 
 ---
 
-### Detailed Open-Source Category Breakdown
+### 🔍 Detailed Open-Source Category Breakdown
 
-#### Feedback & Feature Voting Portals
+#### 🗳️ Feedback & Feature Voting Portals
 - **[Fider](https://github.com/getfider/fider)** — Established, lightweight community portal for capturing user ideas and upvotes. Docker deployable with minimal infrastructure requirements.
 - **[LogChimp](https://github.com/logchimp/logchimp)** — Modular feedback board with roadmap categorization, custom domain branding, and clean REST APIs.
 - **[ClearFlask](https://github.com/clearflask/clearflask)** — Scalable client feedback and public roadmap platform with user segmentation and customizable voting mechanics.
@@ -88,22 +104,41 @@ The sector displays a **moderately fragmented market structure**: large suite in
 - **[Feedbackland](https://github.com/feedbackland/feedbackland)** — Open-source feedback hub focusing on AI-ranked product roadmaps and feature reach calculations without tracked user caps.
 - **[Reflet](https://github.com/damien-schneider/reflet)** — Clean, transparent feedback platform designed for startups and open-source communities.
 
-#### Product Management & Discovery Suites
+#### 🛠️ Product Management & Discovery Suites
 - **[Plane](https://github.com/makeplane/plane)** — Modern delivery and product planning system featuring cycles, project modules, analytics, and timeline roadmap views.
 - **[Eververse](https://github.com/haydenbleasel/eververse)** — Productboard alternative designed for problem discovery, feature ideation, AI-assisted spec creation, and strategy roadmaps.
 - **[Leantime](https://github.com/Leantime/leantime)** — Strategic work and idea management system integrating lean canvas ideation with milestone roadmaps.
 - **[Formbricks](https://github.com/formbricks/formbricks)** — Privacy-first user experience and feedback survey engine to discover customer friction points directly within web apps.
 
-#### Ideation & Innovation Engines
+#### 💡 Ideation & Innovation Engines
 - **[Mindwendel](https://github.com/b310-digital/mindwendel)** — Real-time collaborative brainstorming platform supporting instant idea voting, grouping, and OpenAI-compatible idea generation.
 - **[Ignite](https://github.com/sarathfrancis90/ignite)** — Enterprise-grade innovation management system featuring weighted scoring scorecards, pairwise idea evaluation, and phase-gate progression.
 
-#### Roadmap Planners & Local Scoring Tools
+#### 🗺️ Roadmap Planners & Local Scoring Tools
 - **[Product Roadmap Planner](https://github.com/ugur10/product-roadmap-planner)** — Lightweight, zero-backend interactive 2D Priority Matrix (Impact × Effort) with quarterly drag-and-drop roadmap timelines.
 
 ---
 
-## How to Contribute
+## 🌟 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Product-Prioritization-Discovery&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Product-Prioritization-Discovery&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you for visiting and supporting the **Awesome Product Prioritization & Discovery** repository! 🌟
+
+If you found this curated list helpful for your product team, discovery workflow, or research:
+- ⭐ **Star this repository** to help others discover it.
+- 🍴 **Fork and share** it with your fellow product managers, engineers, and community.
+- ☕ **Support the creator**: Consider buying a coffee or becoming a sponsor via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Your support keeps this directory regularly maintained, verified, and continuously up-to-date!
+
+---
+
+## 🤝 How to Contribute
 
 1. Fork this repository.
 2. Add or update tools in the table and category breakdowns (keep data objective, verify starting pricing/limits, and check star counts).
@@ -111,7 +146,7 @@ The sector displays a **moderately fragmented market structure**: large suite in
 
 ---
 
-## Disclaimer
+## ⚖️ Disclaimer
 
 - This repository is a community-curated directory for informational purposes and does not represent a commercial endorsement.
 - Verify software licenses and data privacy regulations (GDPR, SOC2, CCPA) prior to deployment. Self-hosted deployments require team management of security, uptime, and data retention.

@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="45%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primaryGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+
+    <linearGradient id="cyanBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03"/>
+    </linearGradient>
+
+    <!-- Subtle Grid Filter -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.04"/>
+    </pattern>
+
+    <filter id="shadowBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseGlow {
+      0%, 100% { transform: scale(1); opacity: 0.35; }
+      50% { transform: scale(1.18); opacity: 0.65; }
+    }
+    @keyframes floatCard1 {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-10px) rotate(1deg); }
+    }
+    @keyframes floatCard2 {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(12px) rotate(-1deg); }
+    }
+    @keyframes floatCard3 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes dataFlow {
+      0% { stroke-dashoffset: 120; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes pingDot {
+      0% { r: 3; opacity: 0.9; }
+      50% { r: 7; opacity: 0.3; }
+      100% { r: 3; opacity: 0.9; }
+    }
+    .pulsing-orb {
+      animation: pulseGlow 7s ease-in-out infinite alternate;
+      transform-origin: center;
+    }
+    .floating-card-1 {
+      animation: floatCard1 6s ease-in-out infinite;
+      transform-origin: center;
+    }
+    .floating-card-2 {
+      animation: floatCard2 7.5s ease-in-out infinite;
+      transform-origin: center;
+    }
+    .floating-card-3 {
+      animation: floatCard3 5.5s ease-in-out infinite;
+      transform-origin: center;
+    }
+    .pulse-line {
+      stroke-dasharray: 8 6;
+      animation: dataFlow 2.5s linear infinite;
+    }
+    .ping-point {
+      animation: pingDot 3s ease-in-out infinite;
+    }
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+    }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+    }
+  </style>
+
+  <!-- Deep Canvas Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)"/>
+  <rect width="1200" height="360" rx="16" fill="url(#grid)"/>
+
+  <!-- Dynamic Glowing Mesh in Background (behind content) -->
+  <g opacity="0.45">
+    <circle cx="220" cy="180" r="160" fill="#4f46e5" filter="url(#shadowBlur)" class="pulsing-orb"/>
+    <circle cx="980" cy="120" r="170" fill="#a855f7" filter="url(#shadowBlur)" class="pulsing-orb" style="animation-delay: -3s;"/>
+    <circle cx="600" cy="310" r="140" fill="#ec4899" filter="url(#shadowBlur)" class="pulsing-orb" style="animation-delay: -5s;"/>
+  </g>
+
+  <!-- Animated Background Flow Paths -->
+  <g opacity="0.3">
+    <path d="M 80 80 Q 250 140, 420 80 T 800 110 T 1120 70" fill="none" stroke="#818cf8" stroke-width="2" class="pulse-line"/>
+    <path d="M 120 290 Q 380 230, 600 280 T 1080 270" fill="none" stroke="#f472b6" stroke-width="2" class="pulse-line" style="animation-duration: 3.5s;"/>
+  </g>
+
+  <!-- Floating Dynamic Tech Cards (Placed in Wings so Center Stays Crystal Clear) -->
+  
+  <!-- Left Side: RICE Prioritization Pill -->
+  <g class="floating-card-1" opacity="0.88">
+    <rect x="55" y="105" width="220" height="72" rx="14" fill="url(#cardGrad1)" stroke="#6366f1" stroke-width="1.2"/>
+    <circle cx="85" cy="141" r="14" fill="#6366f1" fill-opacity="0.25"/>
+    <text x="85" y="146" fill="#818cf8" font-size="16" text-anchor="middle" font-weight="bold">⚖️</text>
+    <text x="112" y="134" fill="#f8fafc" class="badge-text" font-size="12">RICE Framework</text>
+    <text x="112" y="152" fill="#94a3b8" class="badge-text" font-size="10">Reach · Impact · Confidence</text>
+    <circle cx="255" cy="141" r="4" fill="#22c55e" class="ping-point"/>
+  </g>
+
+  <!-- Left Side Lower: Feedback Stream Pill -->
+  <g class="floating-card-3" opacity="0.82">
+    <rect x="75" y="205" width="200" height="64" rx="12" fill="url(#cardGrad1)" stroke="#38bdf8" stroke-width="1.2"/>
+    <circle cx="102" cy="237" r="13" fill="#0284c7" fill-opacity="0.25"/>
+    <text x="102" y="242" fill="#38bdf8" font-size="15" text-anchor="middle">💡</text>
+    <text x="126" y="231" fill="#f8fafc" class="badge-text" font-size="12">Feedback Ingestion</text>
+    <text x="126" y="248" fill="#94a3b8" class="badge-text" font-size="10">Voting &amp; AI Clustering</text>
+  </g>
+
+  <!-- Right Side: Roadmap Timeline Card -->
+  <g class="floating-card-2" opacity="0.88">
+    <rect x="925" y="95" width="220" height="74" rx="14" fill="url(#cardGrad1)" stroke="#ec4899" stroke-width="1.2"/>
+    <circle cx="955" cy="132" r="14" fill="#ec4899" fill-opacity="0.25"/>
+    <text x="955" y="137" fill="#f472b6" font-size="16" text-anchor="middle">🗺️</text>
+    <text x="982" y="125" fill="#f8fafc" class="badge-text" font-size="12">Outcome Roadmaps</text>
+    <text x="982" y="143" fill="#94a3b8" class="badge-text" font-size="10">Now · Next · Later Phases</text>
+    <circle cx="1125" cy="132" r="4" fill="#a855f7" class="ping-point"/>
+  </g>
+
+  <!-- Right Side Lower: Open Source Sync Pill -->
+  <g class="floating-card-1" opacity="0.82">
+    <rect x="945" y="195" width="200" height="66" rx="12" fill="url(#cardGrad1)" stroke="#a855f7" stroke-width="1.2"/>
+    <circle cx="972" cy="228" r="13" fill="#9333ea" fill-opacity="0.25"/>
+    <text x="972" y="233" fill="#c084fc" font-size="15" text-anchor="middle">⚡</text>
+    <text x="996" y="222" fill="#f8fafc" class="badge-text" font-size="12">Self-Hosted Portals</text>
+    <text x="996" y="239" fill="#94a3b8" class="badge-text" font-size="10">MCP &amp; Agent Workflows</text>
+  </g>
+
+  <!-- FOREGROUND: Centered Clean Title & Subtitle (High Contrast, Unobscured) -->
+  <g>
+    <!-- Category Pill Badge Above Title -->
+    <rect x="440" y="48" width="320" height="30" rx="15" fill="#1e293b" fill-opacity="0.95" stroke="#475569" stroke-width="1"/>
+    <circle cx="456" cy="63" r="4.5" fill="#10b981"/>
+    <text x="470" y="67" fill="#cbd5e1" class="badge-text" font-size="11" letter-spacing="0.5">CURATED PRODUCT MANAGEMENT ECOSYSTEM</text>
+
+    <!-- Main Title -->
+    <text x="600" y="145" text-anchor="middle" class="title-text" font-size="44" fill="#ffffff" filter="drop-shadow(0 4px 12px rgba(0,0,0,0.6))">
+      Awesome Product Prioritization
+    </text>
+    <text x="600" y="192" text-anchor="middle" class="title-text" font-size="36" fill="url(#primaryGlow)" filter="drop-shadow(0 4px 14px rgba(168,85,247,0.4))">
+      &amp; Discovery Platforms
+    </text>
+
+    <!-- Subtitle Line -->
+    <text x="600" y="234" text-anchor="middle" class="subtitle-text" font-size="16" fill="#94a3b8">
+      Top SaaS Platforms · Open-Source Feedback Boards · Feature Voting &amp; Roadmaps
+    </text>
+
+    <!-- Highlights Badges in Foreground Footer -->
+    <g transform="translate(365, 268)">
+      <!-- Pill 1 -->
+      <rect x="0" y="0" width="140" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="70" y="18" fill="#e2e8f0" class="badge-text" text-anchor="middle">🎯 Prioritization</text>
+
+      <!-- Pill 2 -->
+      <rect x="160" y="0" width="140" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="230" y="18" fill="#e2e8f0" class="badge-text" text-anchor="middle">📊 Customer Voice</text>
+
+      <!-- Pill 3 -->
+      <rect x="320" y="0" width="150" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="395" y="18" fill="#e2e8f0" class="badge-text" text-anchor="middle">🚀 Dynamic Roadmaps</text>
+    </g>
+  </g>
+</svg>

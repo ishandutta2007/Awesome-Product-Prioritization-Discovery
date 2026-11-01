@@ -72,9 +72,9 @@ The sector displays a **moderately fragmented market structure**: large suite in
 
 ## 🔓 Open-Source GitHub Projects
 
-*Open-source discovery and product management tools, sorted by popularity (GitHub star count in descending order).*
+*Open-source discovery and product management tools, sorted by popularity (GitHub Stars_Count in descending order).*
 
-| 📦 Repository | ⭐ GitHub Stars | 🏷️ Primary Role | 💻 Tech Stack | 📜 License |
+| 📦 Repository | ⭐ GitHub_Stars | 🏷️ Primary Role | 💻 Tech Stack | 📜 License |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Plane](https://github.com/makeplane/plane)** | [![Plane Stars](https://img.shields.io/github/stars/makeplane/plane?style=social&color=white)](https://github.com/makeplane/plane/stargazers) | Open-Source Project & Product Management Platform (Cycles, Modules, Roadmaps) | Python / Django, TypeScript, Next.js | AGPL-3.0 |
 | **[Formbricks](https://github.com/formbricks/formbricks)** | [![Formbricks Stars](https://img.shields.io/github/stars/formbricks/formbricks?style=social&color=white)](https://github.com/formbricks/formbricks/stargazers) | Open-Source In-App Feedback & User Discovery Survey Platform | Next.js, TypeScript, PostgreSQL | AGPL-3.0 |
@@ -141,7 +141,7 @@ Your support keeps this directory regularly maintained, verified, and continuous
 ## 🤝 How to Contribute
 
 1. Fork this repository.
-2. Add or update tools in the table and category breakdowns (keep data objective, verify starting pricing/limits, and check star counts).
+2. Add or update tools in the table and category breakdowns (keep data objective, verify starting pricing/limits, and check Stars_Counts).
 3. Submit a Pull Request with a concise summary of updates.
 
 ---
